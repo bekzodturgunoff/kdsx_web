@@ -14,147 +14,59 @@
     />
   </head>
   <body class="font-sans antialiased bg-gray-100">
-    <nav class="bg-gray-900 text-white py-4">
+    <nav class="text-white py-4">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-xl font-bold">KDSX</a>
-        <ul class="flex">
+        <ul class="flex gap-2 text-black">
+          <li><a href="app.kdsx.uz" class="text-xl font-bold">KDSX</a></li>
           <li><a href="#home" class="ml-4">Home</a></li>
-          <li><a href="#services" class="ml-4">Services</a></li>
-          <li><a href="#portfolio" class="ml-4">Portfolio</a></li>
-          <li><a href="#contact" class="ml-4">Contact</a></li>
+          <li><a href="#products" class="ml-4">Products</a></li>
+          <li><a href="#resources" class="ml-4">Resources</a></li>
+          <li><a href="#pricing" class="ml-4">Pricing</a></li>
         </ul>
+        <div class="nav-btns flex gap-5 text-black">
+          <a href="app.kdsx.uz">Log in</a>
+          <a href="app.kdsx.uz">Sign up</a>
+        </div>
       </div>
     </nav>
 
-    <section id="home" class="hero bg-gray-50 py-20">
-      <div
-        class="container mx-auto text-center flex items-center justify-center h-screen flex-col gap-5"
-      >
-        <h1 class="text-4xl font-bold mb-4">Team members</h1>
-        <img src="./images/team.svg" alt="team" class="w-50" />
-        <p class="text-lg mb-8 preline w-96">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-          exercitationem et officiis recusandae, voluptas fuga odit error.
-          Veniam, eum facilis.
-        </p>
-        <a
-          href="#services"
-          class="bg-blue-600 text-white px-8 py-3 rounded-full inline-block hover:bg-blue-700 transition duration-300"
-          >Our Services</a
-        >
-      </div>
-    </section>
-
-    <section id="services" class="py-20 bg-gray-100">
-      <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          <div class="p-6 bg-white shadow-md rounded-lg">
-            <h3 class="text-xl font-bold mb-4">Manage your business</h3>
-            <p class="text-gray-700 mb-4">
-              We create beautiful and responsive websites that stand out.
-            </p>
-            <a href="#" class="text-blue-500 hover:underline">Learn More</a>
-            <img src="./images/dash.svg" alt="metrics" />
+    <section id="home" class="py-20 bg-gray-100 flex justify-between">
+      <div class="container mx-auto flex justify-between">
+        <div class="flex gap-2 flex-col">
+          <h1 class="text-6xl w-5/6">Smart business with KDSX</h1>
+          <p class="w-96">
+            KDSX is a Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae, inventore!
+          </p>
+          <div class="btns">
+            <button>Demo</button>
+            <button>Sign up</button>
           </div>
-          <div class="p-6 bg-white shadow-md rounded-lg">
-            <h3 class="text-xl font-bold mb-4">Take orders</h3>
-            <p class="text-gray-700 mb-4">
-              Our expert team helps you reach your target audience and grow your
-              business.
-            </p>
-            <a href="#" class="text-blue-500 hover:underline">Learn More</a>
-            <img src="./images/servers.svg" alt="servers" />
-          </div>
-          <div class="p-6 bg-white shadow-md rounded-lg">
-            <h3 class="text-xl font-bold mb-4">Kitchen</h3>
-            <p class="text-gray-700 mb-4">
-              We create visually stunning graphics and branding materials.
-            </p>
-            <a href="#" class="text-blue-500 hover:underline">Learn More</a>
-            <img src="./images/food.svg" alt="kitchen" />
-          </div>
+        </div>
+        <div class="">
+          <img src="https://via.placeholder.com/600x400" alt="placeholder" />
         </div>
       </div>
     </section>
-
-    <section id="portfolio" class="py-20 bg-gray-200">
+    <section id="products" class="py-20 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Our Portfolio</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            <img
-              src="https://via.placeholder.com/600x400"
-              alt="Project 1"
-              class="w-full h-64 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-4">Project Title</h3>
-              <p class="text-gray-700 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">View Project</a>
-            </div>
-          </div>
-        </div>
+        <h1>products</h1>
       </div>
     </section>
-
-    <section id="contact" class="py-20 bg-gray-100">
+    <section id="resources" class="py-20 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
-            <p class="text-gray-700 mb-4">
-              Have questions or want to discuss a project? Contact us.
-            </p>
-            <ul>
-              <li>Email: team@kdsx.uz</li>
-              <li>Phone: +998901234567</li>
-              <li>Address: Uzbekistan, Namangan city</li>
-            </ul>
-          </div>
-          <div>
-            <form>
-              <div class="mb-4">
-                <label for="name" class="block mb-2">Your Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full bg-gray-200 px-4 py-2 rounded-md focus:outline-none focus:bg-white transition duration-300"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="block mb-2">Your Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full bg-gray-200 px-4 py-2 rounded-md focus:outline-none focus:bg-white transition duration-300"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="message" class="block mb-2">Your Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="w-full bg-gray-200 px-4 py-2 rounded-md focus:outline-none focus:bg-white transition duration-300"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
+        <h1>resources</h1>
       </div>
     </section>
+    <section id="pricing" class="py-20 bg-gray-100">
+      <div class="container mx-auto">
+        <h1>pricing</h1>
+      </div>
+    </section>
+    <footer id="contact" class="py-20 bg-gray-100">
+      <div class="container mx-auto">
+        <h1>footer</h1>
+      </div>
+    </footer>
   </body>
 </html>
