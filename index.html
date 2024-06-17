@@ -12,41 +12,57 @@
       href="https://cdn.jsdelivr.net/npm/preline@latest/preline.css"
       rel="stylesheet"
     />
+
+    <style>
+      .custom-bg {
+        background-image: url("./images/background_pattern.svg");
+      }
+    </style>
   </head>
   <body class="font-sans antialiased">
-    <div class="bg-[url('./images/background_pattern.svg')] bg-cover">
+    <div class="custom-bg bg-cover">
       <!-- why background_pattern is not working?  -->
       <nav class="text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
-          <ul class="flex gap-2 text-black">
+          <ul class="flex gap-2 text-black items-center">
             <li><a href="app.kdsx.uz" class="text-xl font-bold">KDSX</a></li>
             <li><a href="#home" class="ml-4">Home</a></li>
             <li><a href="#products" class="ml-4">Products</a></li>
             <li><a href="#resources" class="ml-4">Resources</a></li>
             <li><a href="#pricing" class="ml-4">Pricing</a></li>
           </ul>
-          <div class="nav-btns flex gap-5 text-black">
-            <a href="app.kdsx.uz">Log in</a>
-            <a href="app.kdsx.uz">Sign up</a>
+          <div class="nav-btns flex gap-3 text-black">
+            <a href="app.kdsx.uz" class="rounded-md px-6 py-2">Log in</a>
+            <a
+              href="app.kdsx.uz"
+              class="rounded-md px-6 py-2 bg-indigo-500 text-white"
+              >Sign up</a
+            >
           </div>
         </div>
       </nav>
 
       <section id="home" class="py-20 flex justify-between">
-        <div class="container mx-auto flex justify-between">
-          <div class="flex gap-2 flex-col">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex gap-4 flex-col">
             <h1 class="text-6xl w-5/6">Smart business with KDSX</h1>
             <p class="w-96">
               KDSX is a Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae, inventore!
             </p>
-            <div class="btns">
-              <button>Demo</button>
-              <button>Sign up</button>
+            <div class="btns flex gap-2">
+              <button class="border rounded-md px-6 py-2">Demo</button>
+              <button class="rounded-md px-6 py-2 bg-indigo-500 text-white">
+                Sign up
+              </button>
             </div>
           </div>
-          <div class="">
-            <img src="https://via.placeholder.com/600x400" alt="placeholder" />
+          <div class="flex justify-end">
+            <img
+              src="./images/hero_sample.svg"
+              alt="placeholder"
+              class="w-10/12"
+            />
           </div>
         </div>
       </section>
