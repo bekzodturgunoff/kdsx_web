@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-bg {
+  background-image: url("./images/background_pattern.svg");
+}
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  flex-shrink: 1;
+  animation: scroll 25s linear infinite;
+}
+
+.carousel-slide {
+  position: relative;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.carousel-slide {
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+.svg-icon {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.svg-icon:hover {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(95%) saturate(1579%) hue-rotate(208deg) brightness(94%) contrast(95%);
+}
+
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scrollToRight 25s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollToRight {
+  0% {
+    transform: translateX(calc(-100px * 7));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
