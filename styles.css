@@ -5,6 +5,10 @@
 /* .custom-bg {
   background-image: url("./images/background_pattern.svg");
 } */
+html {
+  scroll-behavior: smooth;
+}
+
 .carousel {
   width: 100%;
   position: relative;
