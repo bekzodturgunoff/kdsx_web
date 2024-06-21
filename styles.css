@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-bg {
+/* .custom-bg {
   background-image: url("./images/background_pattern.svg");
-}
+} */
 .carousel {
   width: 100%;
   position: relative;
@@ -54,6 +54,27 @@
   width: calc(250px * 10);
   animation: scrollToRight 25s linear infinite;
 }
+@media (max-width: 640px) {
+  .slide-track {
+    width: calc(120px * 10);
+    animation: scrollToRight 15s linear infinite;
+  }
+  .carousel-slides {
+    animation: scroll 10s linear infinite;
+  }
+  .px {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .px {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);

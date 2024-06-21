@@ -8,47 +8,56 @@
     <script type="text/javascript" src="./index.js"></script>
   </head>
   <body class="font-sans antialiased">
-    <div class="custom-bg bg-cover">
+    <div class="custom-bg bg-cover px">
       <nav class="text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
           <ul class="flex gap-2 text-black items-center">
-            <li><a href="app.kdsx.uz" class="text-4xl font-bold text-blue-500">KDSX</a></li>
-            <li><a href="#home" class="ml-4">Home</a></li>
-            <li><a href="#features" class="ml-4">Features</a></li>
-            <li><a href="#pricing" class="ml-4">Pricing</a></li>
-            <li><a href="#reviews" class="ml-4">Reviews</a></li>
-            <li><a href="#partners" class="ml-4">Partners</a></li>
+            <li>
+              <a href="app.kdsx.uz" class="text-4xl font-bold bg-blue-600 text-white py-1 px-1 rounded-md">KDSX</a>
+            </li>
+            <li><a href="#home" class="ml-4 hidden md:block">Home</a></li>
+            <li><a href="#features" class="ml-4 hidden md:block">Features</a></li>
+            <li><a href="#pricing" class="ml-4 hidden md:block">Pricing</a></li>
+            <li><a href="#reviews" class="ml-4 hidden md:block">Reviews</a></li>
+            <li><a href="#partners" class="ml-4 hidden md:block">Partners</a></li>
           </ul>
           <div class="nav-btns flex gap-3 text-black">
-            <a href="app.kdsx.uz" class="rounded-lg px-6 py-2">Log in</a>
-            <a href="app.kdsx.uz" class="rounded-lg px-6 py-2.5 bg-blue-600 text-white font-semibold">Sign up</a>
+            <a href="app.kdsx.uz" class="rounded-lg px-6 py-2 hidden md:block">Log in</a>
+            <a href="app.kdsx.uz" class="rounded-lg px-6 py-2.5 bg-blue-600 text-white font-semibold hidden md:block">Sign up</a>
+            <div class="md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+            </div>
           </div>
         </div>
       </nav>
 
-      <section id="home" class="py-20 flex justify-between">
-        <div class="container mx-auto flex justify-between items-center">
+      <section id="home" class="py-10 lg:py-20 flex justify-between">
+        <div class="container mx-auto lg:flex justify-between">
           <div class="flex gap-4 flex-col">
-            <h1 class="text-8xl">Smart business with <span class="text-blue-500">KDSX</span></h1>
-            <p class="w-96 tracking-wide font-light text-base my-6">KDSX is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, inventore!</p>
-            <div class="btns flex gap-2">
-              <button class="border border-[#D0D5DD] rounded-lg px-11 py-4 font-semibold inline-flex gap-2 bg-white">
+            <h1 class="text-5xl md:text-5xl lg:text-7xl md:text-center lg:text-start">Make the smart choice for your business<span class="text-blue-500"> today!</span></h1>
+            <p class="w-auto md:w-96 tracking-wide font-light text-base my-2 md:my-6 md:text-center md:mx-auto lg:text-start lg:mx-0">Automate your daily tasks, reduce manual errors, and save valuable time with KDSX POS, so you can focus on what you do best – serving great food.</p>
+            <div class="btns flex gap-4 flex-col-reverse md:flex-row md:justify-center lg:justify-start">
+              <button class="border border-[#D0D5DD] rounded-lg px-11 py-4 font-semibold inline-flex gap-2 bg-white justify-center md:justify-normal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play">
                   <circle cx="12" cy="12" r="10" />
                   <polygon points="10 8 16 12 10 16 10 8" />
                 </svg>
                 Demo
               </button>
-              <button class="rounded-lg px-8 py-4 bg-blue-600 text-white font-semibold">Sign up</button>
+              <button class="rounded-lg px-8 py-4 bg-blue-600 text-white font-semibold inline-flex justify-center">Sign up</button>
             </div>
           </div>
-          <div class="flex justify-end relative">
-            <img src="./images/kdsx_pos_img_2.png" alt="placeholder" class="w-full" />
+          <div class="flex justify-end relative mt-8">
+            <img src="./images/pos_img.png" alt="placeholder" class="w-full" />
           </div>
         </div>
       </section>
     </div>
-    <section id="features" class="py-20 container mx-auto text-center flex flex-col gap-2">
+    <section id="features" class="py-10 md:py-20 container mx-auto text-center flex flex-col gap-2 px">
       <h1 class="text-blue-500 font-bold">Features</h1>
       <h1 class="text-4xl mb-2">All you need to run your finances effectively</h1>
       <p class="tracking-wide font-light text-base">Open a full-featured account in with virtual cards in less than 5 minutes.</p>
@@ -86,15 +95,15 @@
       </div>
       <hr class="w-full" />
     </section>
-    <section id="pricing" class="">
+    <section id="pricing" class="px">
       <div class="container mx-auto text-center">
         <h1 class="text-blue-500 font-bold">Pricing</h1>
         <h1 class="text-4xl my-4">Plans that fit your scale</h1>
         <p class="mb-10">Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
         <div class="mb-20">
-          <div class="flex justify-center gap-x-6">
+          <div class="flex flex-col lg:flex-row justify-center gap-x-6 gap-y-6 lg:gap-y-0 flex-wrap">
             <div class="flex items-center justify-center gap-8">
-              <div class="w-96 border rounded-lg px-6 py-6 shadow-md">
+              <div class="w-full max-w-sm lg:w-96 border rounded-lg px-6 py-6 shadow-md">
                 <div class="flex justify-between">
                   <span class="font-semibold">Monthly payment</span>
                 </div>
@@ -118,41 +127,20 @@
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">Access to all features</p>
                   </div>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">9/5 support</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="flex items-center justify-center gap-8">
-              <div class="w-96 border rounded-lg px-6 py-6 shadow-md">
+              <div class="w-full max-w-sm lg:w-96 border rounded-lg px-6 py-6 shadow-md">
                 <div class="flex justify-between">
                   <span class="font-semibold">Yearly payment</span>
                 </div>
@@ -170,47 +158,33 @@
                 </div>
                 <div class="text-left py-6">
                   <span class="font-semibold uppercase">Features</span>
-                  <p class="text-gray-600">Everything in <span class="font-semibold">Starter</span> plus....</p>
+                  <p class="text-gray-600">Everything in <span class="font-semibold">Monthly</span> plus....</p>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">Save up to 45$ on this deal</p>
                   </div>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">Access to all features</p>
                   </div>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">24/7 support</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="flex items-center justify-center gap-8">
-              <div class="w-96 border rounded-lg px-6 py-6 shadow-md">
+              <div class="w-full max-w-sm lg:w-96 border rounded-lg px-6 py-6 shadow-md">
                 <div class="flex justify-between">
                   <span class="font-semibold">Lifetime Purchase</span>
                   <span class="border rounded-full h-7 w-20 bg-blue-100 text-blue-600 border-blue-400">Premium</span>
@@ -229,41 +203,27 @@
                 </div>
                 <div class="text-left py-6">
                   <span class="font-semibold uppercase">Features</span>
-                  <p class="text-gray-600">Everything in <span class="font-semibold">Starter</span> plus....</p>
+                  <p class="text-gray-600">Lifetime <span class="font-semibold">Access</span> plus....</p>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">Free mentorship from A to Z</p>
                   </div>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">1 Check printing machine bonus</p>
                   </div>
                   <div class="flex mt-4 gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
                       <circle cx="12" cy="12" r="10" />
                       <path d="m9 12 2 2 4-4" />
                     </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
-                  </div>
-                  <div class="flex mt-4 gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check text-blue-600">
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <p class="text-gray-600">Access to basic features</p>
+                    <p class="text-gray-600">Free new updates</p>
                   </div>
                 </div>
               </div>
@@ -273,15 +233,15 @@
         <hr />
       </div>
     </section>
-    <section id="reviews" class="pt-20">
+    <section id="reviews" class="pt-10 md:pt-20 px">
       <div class="container mx-auto flex flex-col lg:flex-row justify-between items-start">
         <div class="flex flex-col mb-8 lg:mb-0">
           <h1 class="text-4xl font-semibold mb-4">Don’t just take our word for it</h1>
           <p class="text-gray-600">Hear from some of our amazing customers who are automating their businesses.</p>
         </div>
-        <div class="flex gap-2">
-          <button class="border px-6 py-2.5 rounded-lg">Our customers</button>
-          <button class="bg-blue-600 text-white px-6 py-2.5 rounded-lg">Create account</button>
+        <div class="flex gap-4 flex-col-reverse w-full md:w-auto md:flex-row">
+          <button class="border px-6 py-3 rounded-lg">Our customers</button>
+          <button class="bg-blue-600 text-white px-6 py-3 rounded-lg">Create account</button>
         </div>
       </div>
       <div class="container mx-auto carousel mt-10" id="">
@@ -389,7 +349,7 @@
         </button>
       </div> -->
     </section>
-    <section id="partners" class="py-20">
+    <section id="partners" class="py-10 md:py-20">
       <div class="container mx-auto bg-[#F9FAFB] p-6 rounded-xl">
         <div class="max-w-[85rem] mx-auto">
           <div class="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
@@ -415,9 +375,9 @@
       </div>
     </section>
 
-    <section id="demo" class="py-20">
+    <section id="demo" class="py-10 md:py-20 px">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center relative">
+        <div class="md:flex justify-between items-center relative">
           <div class="">
             <h1 class="text-4xl mb-10">Get started in 5 minutes</h1>
             <div class="flex mt-4 gap-2">
@@ -441,16 +401,16 @@
               </svg>
               <p class="text-gray-600">Access to all features</p>
             </div>
-            <div class="flex gap-2 mt-10">
+            <div class="flex gap-2 mt-10 w-full flex-col-reverse md:flex-row">
               <button class="border px-6 py-3 rounded-lg">Learn more</button>
               <button class="bg-blue-600 text-white px-6 py-3 rounded-lg">Get started</button>
             </div>
           </div>
-          <img src="./images/dash_img.png" alt="" class="border-4 rounded-lg border-black w-[60%]" />
+          <img src="./images/dash_img.png" alt="" class="border-4 rounded-lg border-black w-full md:w-[60%] mt-8" />
         </div>
       </div>
     </section>
-    <footer id="contact" class="pt-20 bg-[#0C111D]">
+    <footer id="contact" class="pt-10 md:pt-20 bg-[#0C111D]">
       <div class="container mx-auto text-center">
         <h1 class="text-4xl text-white">No long-term contracts. No catches. Simple.</h1>
         <p class="mt-4 mb-8 text-gray-600">Start your 14-day free trial. Cancel anytime.</p>
@@ -469,12 +429,12 @@
           <div class="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto">
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 text-left">
               <div class="col-span-full lg:col-span-1">
-                <a class="flex-none text-xl font-semibold text-white" href="#" aria-label="Brand">Brand</a>
+                <a class="flex-none font-semibold text-white" href="#" aria-label="Brand">Brand</a>
               </div>
               <div class="col-span-1">
                 <h4 class="font-semibold text-gray-100">Product</h4>
                 <div class="mt-3 grid space-y-3">
-                  <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Pricing</a></p>
+                  <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#pricing">Pricing</a></p>
                   <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Changelog</a></p>
                   <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Docs</a></p>
                 </div>

@@ -11,13 +11,12 @@ window.addEventListener("load", function () {
 
   const startSlide = (index) => {
     this.setInterval(() => {
-      moveDistance = moveDistance + slides[index].clientWidth + paddingRight;
+      moveDistance = moveDistance + slides[index]?.clientWidth + paddingRight;
       slidesWrapper.style.transform = `translateX(${-moveDistance}px)`;
       slidesWrapper.style.transition = "1s";
-
-      firstClone = slides[index].cloneNode(true);
-      firstClone.id = `first-clone-${index}`;
-      slidesWrapper.append(firstClone);
+      firstClone = slides[index]?.cloneNode(true);
+      firstClone?.id ? (firstClone.id = `first-clone-${index}`) : "";
+      slidesWrapper?.append(firstClone);
       index++;
     }, interval);
   };
